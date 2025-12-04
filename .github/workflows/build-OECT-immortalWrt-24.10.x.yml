@@ -19,6 +19,8 @@ on:
         description: |
           输入 软路由型号 可选值如下：
         options:
+          - oect
+          - friendlyarm_nanopi-r3s
           - ariaboard_photonicat
           - armsom_sige3
           - armsom_sige7
@@ -31,7 +33,6 @@ on:
           - friendlyarm_nanopi-r2c
           - friendlyarm_nanopi-r2c-plus
           - friendlyarm_nanopi-r2s
-          - friendlyarm_nanopi-r3s
           - friendlyarm_nanopi-r4s
           - friendlyarm_nanopi-r4se
           - friendlyarm_nanopi-r4s-enterprise
@@ -63,18 +64,18 @@ on:
           - xunlong_orangepi-r1-plus
           - xunlong_orangepi-r1-plus-lts
         required: true
-        default: 'friendlyarm_nanopi-r3s'
+        default: 'oect'
       custom_router_ip:
         description: "请设置软路由的管理地址(注意仅对多网口软路由有效) 格式:192.168.x.1 或 10.x.x.1"
         required: true
-        default: "192.168.100.1"
+        default: "192.168.10.248"
       rootfs_partsize:
         description: '设置软件包大小 单位(MB)'
         required: true
         default: '1024'
       enable_store:
         description: "集成 store 商店"
-        required: false
+        required: true
         type: boolean
         default: true
       include_docker:
