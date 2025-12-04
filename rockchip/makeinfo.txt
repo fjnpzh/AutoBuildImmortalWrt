@@ -69,6 +69,11 @@ friendlyarm_nanopi-r3s:
     Packages: kmod-r8168
     hasImageMetadata: 1
     SupportedDevices: friendlyarm,nanopi-r3s
+oect:
+    FriendlyARM oect
+    Packages: kmod-r8168
+    hasImageMetadata: 1
+    SupportedDevices: friendlyarm,oect
 friendlyarm_nanopi-r4s:
     FriendlyARM NanoPi R4S
     Packages: kmod-r8168
